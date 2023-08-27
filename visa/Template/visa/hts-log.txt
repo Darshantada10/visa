@@ -1,0 +1,30 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 23 Aug 2023 19:51:57 at https://kodesolution.com/html/2023/immigro-html/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://kodesolution.com/html/2023/immigro-html/index.html -O1 "C:\My Web Sites\visa" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+19:53:31	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/index-1-Single.html (from https://kodesolution.com/html/2023/immigro-html/index.html)
+19:53:31	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/index-2-Single.html (from https://kodesolution.com/html/2023/immigro-html/index.html)
+19:53:31	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/index-3-Single.html (from https://kodesolution.com/html/2023/immigro-html/index.html)
+19:53:40	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/page-FAQ.html (from https://kodesolution.com/html/2023/immigro-html/index.html)
+19:53:59	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/images/icons/pattern-10.jpg (from https://kodesolution.com/html/2023/immigro-html/css/style.css)
+19:53:59	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/images/icons/icon-dots.png (from https://kodesolution.com/html/2023/immigro-html/css/style.css)
+19:53:59	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/images/icons/line-5.png (from https://kodesolution.com/html/2023/immigro-html/css/style.css)
+19:53:59	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/images/icons/pattern-3.png (from https://kodesolution.com/html/2023/immigro-html/css/style.css)
+19:53:59	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/images/icons/cat-1-bg.png (from https://kodesolution.com/html/2023/immigro-html/css/style.css)
+19:53:59	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/images/icons/cat-2-bg.png (from https://kodesolution.com/html/2023/immigro-html/css/style.css)
+19:53:59	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/images/icons/cat-3-bg.png (from https://kodesolution.com/html/2023/immigro-html/css/style.css)
+19:53:59	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/images/icons/cat-4-bg.png (from https://kodesolution.com/html/2023/immigro-html/css/style.css)
+19:53:59	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/images/icons/pattern-8.png (from https://kodesolution.com/html/2023/immigro-html/css/style.css)
+19:54:03	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/shop-details.html (from https://kodesolution.com/html/2023/immigro-html/shop-products-sidebar.html)
+19:54:03	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/css/owl.video.play.png (from https://kodesolution.com/html/2023/immigro-html/css/owl.css)
+19:54:03	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/css/images/ui-icons_777620_256x240.png (from https://kodesolution.com/html/2023/immigro-html/css/jquery-ui.css)
+19:54:03	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/css/images/ui-icons_cc0000_256x240.png (from https://kodesolution.com/html/2023/immigro-html/css/jquery-ui.css)
+19:54:03	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/fonts/flaticon_visa.eot?174fca3cf9482f9a46c19ed8e5d38c7f (from https://kodesolution.com/html/2023/immigro-html/css/flaticon.css)
+19:54:03	Error: 	"Not Found" (404) at link https://kodesolution.com/html/2023/immigro-html/images/icons/shapes-dark.png (from https://kodesolution.com/html/2023/immigro-html/css/style-dark.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 6 seconds : 287 links scanned, 267 files written (21855584 bytes overall) [15451915 bytes received at 122634 bytes/sec], 11477236 bytes transferred using HTTP compression in 108 files, ratio 30%, 17.9 requests per connection
+(19 errors, 0 warnings, 0 messages)
