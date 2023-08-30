@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FrontEnd\HomeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+//Home Routes
+Route::get('/logos',[HomeController::class,'logos']);
+Route::get('/navbars',[HomeController::class,'navbars']);
