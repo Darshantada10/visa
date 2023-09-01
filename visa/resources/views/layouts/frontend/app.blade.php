@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>Immigro | Visa & Immigrations Services HTML Template | Home Page 02</title>
+<title>DHWAY Overseas</title>
 
 <link href="{{asset('Assets/FrontEnd/css/bootstrap.min.css')}}" rel="stylesheet">
 <link href="{{asset('Assets/FrontEnd/css/style.css')}}" rel="stylesheet">
@@ -42,9 +42,10 @@
                         <nav class="nav main-menu">
 
                             <ul class="navigation" id="navbar_id1">
-                              
-
+                                
+                                
                             </ul>
+                          {{-- {{dd(Auth::user()->role_as)}} --}}
 
                         </nav>
     
@@ -190,9 +191,24 @@
                            navbars1 +=
                            `<li><a href="/${navbar.navbar}">${navbar.navbar}</a></li>`
                        });
-                       document.getElementById("navbar_id1").innerHTML = navbars1
-                       document.getElementById("navbar_id2").innerHTML = navbars1
-                       document.getElementById("navbar_id3").innerHTML = navbars1
+                       document.getElementById("navbar_id1").innerHTML = navbars1+
+                       `@guest
+                       <li><a href="/login">Login</a></li>
+                       @else
+                       <li><a href="/logout">Log Out</a></li>
+                       @endguest`
+                       document.getElementById("navbar_id2").innerHTML = navbars1+
+                       `@guest
+                       <li><a href="/login">Login</a></li>
+                       @else
+                       <li><a href="/logout">Log Out</a></li>
+                       @endguest`
+                       document.getElementById("navbar_id3").innerHTML = navbars1+
+                       `@guest
+                       <li><a href="/login">Login</a></li>
+                       @else
+                       <li><a href="/logout">Log Out</a></li>
+                       @endguest`
                  
                    })
                }

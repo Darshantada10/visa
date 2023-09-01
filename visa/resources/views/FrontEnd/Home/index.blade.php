@@ -3,22 +3,14 @@
 
 
 @section('content')
-    
-<h1>Home Page</h1>
-<h1>Home Page</h1>
-<h1>Home Page</h1>
-<h1>Home Page</h1>
-<h1>Home Page</h1>
-<h1>Home Page</h1>
-<h1>Home Page</h1>
-<h1>Home Page</h1>
-<h1>Home Page</h1>
-<h1>Home Page</h1>
-<h1>Home Page</h1>
-<h1>Home Page</h1>
-<h1>Home Page</h1>
-<h1>Home Page</h1>
-<h1>Home Page</h1>
+
+
+@if (session('status'))
+<div class="alert alert-primary" role="alert">
+    {{ session('status') }}
+</div>
+@endif
+
 <h1>Home Page</h1>
 
 @endsection
