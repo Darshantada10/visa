@@ -64,12 +64,14 @@
                 <ul class="menu-inner py-1">
 
                     <li class="menu-item active">
-                        <a href="/partner/dashboard" class="menu-link">
+                        <a href="{{url('/partner/dashboard')}}" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-home-circle"></i>
                             <div data-i18n="Analytics">Dashboard</div>
                         </a>
                     </li>
-
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Universities</span>
+                    </li>
                     <li class="menu-item">
                         {{-- <a href="javascript:void(0);" class="menu-link menu-toggle"> --}}
                         <a href="" class="menu-link menu-toggle">
@@ -79,8 +81,13 @@
 
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="layouts-without-menu.html" class="menu-link">
+                                <a href="{{url('/partner/all-universities')}}" class="menu-link">
                                     <div data-i18n="Without menu">All Universities</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="{{url('/partner/add-universities')}}" class="menu-link">
+                                    <div data-i18n="Without menu">Add Universities</div>
                                 </a>
                             </li>
                             
@@ -188,11 +195,16 @@
                 </nav>
 
 
-
+                <div class="content-wrapper">
+                
+                    <div class="container-xxl flex-grow-1 container-p-y">
 
 @yield('content')
 
 
+                    </div>
+                
+                </div>
 
                 
                                     <footer class="content-footer footer bg-footer-theme">

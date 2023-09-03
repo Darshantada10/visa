@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BackEnd\DashboardController;
+use App\Http\Controllers\BackEnd\UniversityController;
 use App\Http\Controllers\FrontEnd\AuthController;
 use App\Http\Controllers\FrontEnd\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -35,6 +36,10 @@ Route::prefix('/partner')->middleware(['auth','Is_Partner'])->group(function()
     
     //Dashboard Routes
     Route::get('/dashboard',[DashboardController::class,'index']);
+    
+    //Universities Routess
+    Route::get('/all-universities',[UniversityController::class,'index']);
+    Route::get('/add-universities',[UniversityController::class,'create']);
 
         
 });
