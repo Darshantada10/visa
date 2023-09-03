@@ -22,4 +22,8 @@ class University extends Model
         "accreditation",
         "ranking"
     ];
+    public function courses()
+    {
+        return $this->hasMany(Course::class,'university_id','id');
+    }
 }

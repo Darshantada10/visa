@@ -21,8 +21,8 @@ return new class extends Migration
             $table->string("fees");
             $table->string("ielts");
             $table->string("deadline");
-            $table->string("admission_document");
-            $table->string("accreditation");
+            $table->longText("admission_document");
+            $table->longText("accreditation");
             $table->string("ranking");
             $table->timestamps();
         });

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BackEnd\CourseController;
 use App\Http\Controllers\BackEnd\DashboardController;
 use App\Http\Controllers\BackEnd\UniversityController;
 use App\Http\Controllers\FrontEnd\AuthController;
@@ -31,15 +32,23 @@ Route::post('/login',[AuthController::class,'login'])->middleware('guest');
 Route::get('/logout',[AuthController::class,'logout']);
 
 //Partner routes
-Route::prefix('/partner')->middleware(['auth','Is_Partner'])->group(function()
+Route::prefix('/partner')->middleware(['auth','Is_Partner','web'])->group(function()
 {
     
     //Dashboard Routes
     Route::get('/dashboard',[DashboardController::class,'index']);
     
-    //Universities Routess
+    //Universities Routes
     Route::get('/all-universities',[UniversityController::class,'index']);
     Route::get('/add-universities',[UniversityController::class,'create']);
+    Route::get('/edit-universities/{id}',[UniversityController::class,'edit']);
 
-        
+    //Courses Routes
+    Route::controller(CourseController::class)->group(function()
+    {
+        Route::get('/all-courses','index');
+        Route::get('/add-courses','create');
+        Route::get('/edit-courses/{id}','edit');
+    });
+
 });

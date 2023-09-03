@@ -69,9 +69,11 @@
                             <div data-i18n="Analytics">Dashboard</div>
                         </a>
                     </li>
+
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Universities</span>
                     </li>
+                    
                     <li class="menu-item">
                         {{-- <a href="javascript:void(0);" class="menu-link menu-toggle"> --}}
                         <a href="" class="menu-link menu-toggle">
@@ -88,6 +90,32 @@
                             <li class="menu-item">
                                 <a href="{{url('/partner/add-universities')}}" class="menu-link">
                                     <div data-i18n="Without menu">Add Universities</div>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                 
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Courses</span>
+                    </li>
+
+                    <li class="menu-item">
+                        {{-- <a href="javascript:void(0);" class="menu-link menu-toggle"> --}}
+                        <a href="" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-layout"></i>
+                            <div data-i18n="Layouts">Courses</div>
+                        </a>
+
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="{{url('/partner/all-courses')}}" class="menu-link">
+                                    <div data-i18n="Without menu">All Courses</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="{{url('/partner/add-courses')}}" class="menu-link">
+                                    <div data-i18n="Without menu">Add Courses</div>
                                 </a>
                             </li>
                             
@@ -228,16 +256,7 @@
       <!-- Overlay -->
       <div class="layout-overlay layout-menu-toggle"></div>
     </div>
-    <!-- / Layout wrapper -->
 
-    <div class="buy-now">
-      <a
-        href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
-        target="_blank"
-        class="btn btn-danger btn-buy-now"
-        >Upgrade to Pro</a
-      >
-    </div>
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
