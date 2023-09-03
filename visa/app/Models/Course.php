@@ -19,6 +19,6 @@ class Course extends Model
     ];
     public function universities()
     {
-        return $this->belongsTo(University::class,'university_id','id');
+        return $this->belongsTo(University::class,'university_id');
     }
 }

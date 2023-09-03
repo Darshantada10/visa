@@ -23,7 +23,7 @@
             // if(response.length == 0)
             // {
             //     console.log(1);
-            //     htmltabledata = `
+            //     disp_data = `
             //         <tr>
             //         <th style="text-align: center;" colspan="7">No Data Found</th>
             //         </tr>`
@@ -31,9 +31,9 @@
             // }
             // else
             // {
-                htmltabledata = ""
+                disp_data = ""
             response.forEach(data => {
-                htmltabledata += ` <div class="card-header">
+                disp_data += ` <div class="card-header">
         <h3>
             Add University
               <a href="{{url('/partner/all-universities')}}" class="btn btn-primary float-end">Back </a>
@@ -110,7 +110,7 @@
             });
             // }
           
-            document.getElementById("edit_university_data").innerHTML = htmltabledata
+            document.getElementById("edit_university_data").innerHTML = disp_data
         })
     }
     function update_university_data(id)

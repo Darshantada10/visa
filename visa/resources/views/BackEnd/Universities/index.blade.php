@@ -75,7 +75,7 @@
             }
           
             document.getElementById("university_data").innerHTML = htmltabledata
-        })
+            })
     }
 
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BackEnd\CourseController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontEnd\HomeController;
@@ -32,3 +33,11 @@ Route::post('/add-universities',[UniversityController::class,'store']);
 Route::get('/edit-universities/{id}',[UniversityController::class,'edit_university']);
 Route::post('/edit-universities/{id}',[UniversityController::class,'update']);
 Route::get('/delete-universities/{id}',[UniversityController::class,'delete']);
+
+//Course Routes
+Route::get('/all-courses',[CourseController::class,'display']);
+Route::get('/course-universities',[CourseController::class,'university']);
+Route::post('/add-courses',[CourseController::class,'store']);
+Route::get('/edit-courses/{id}',[CourseController::class,'edit_course']);
+Route::post('/edit-courses/{id}',[CourseController::class,'update']);
+Route::get('/delete-courses/{id}',[CourseController::class,'delete']);
