@@ -14,6 +14,7 @@ class CourseController extends Controller
     {
         //         $course = Course::find(2);
         // dd($course);
+        
         return view("BackEnd.Courses.index");
     }
     public function create()
@@ -22,12 +23,17 @@ class CourseController extends Controller
     }
     public function edit($id)
     {
+        // $course = Course::with('universities')->findOrFail(1);
+        // $university = University::select('id','university_name','campus')->get();
+        // dd($course,$university);
         return view("BackEnd.Courses.edit",compact('id'));
     }
     public function edit_course($id)
     {
         $course = Course::with('universities')->findOrFail($id);
-        return response()->json([$course]);
+        $university = University::select('id','university_name','campus')->get();
+
+        return response()->json([$course,$university]);
     }
     public  function university()
     {
